@@ -1,19 +1,19 @@
-
 import 'package:flutter/material.dart';
 
 import 'custom_text.dart';
 
-class CustonTextFormField extends StatelessWidget {
+class CustomTextFormField extends StatelessWidget {
   final String text;
   final Function(String?)? onSaved;
   final String hintText;
   final String Function(String?)? validator;
-
-  CustonTextFormField(
+  final int maxLength;
+  CustomTextFormField(
       {required this.text,
       required this.onSaved,
       required this.validator,
-      required this.hintText});
+      required this.hintText,
+      this.maxLength = 2});
 
   @override
   Widget build(BuildContext context) {
@@ -26,6 +26,7 @@ class CustonTextFormField extends StatelessWidget {
             color: Colors.grey,
           ),
           TextFormField(
+            maxLines: maxLength,
             decoration: InputDecoration(
                 hintText: hintText,
                 hintStyle: TextStyle(fontSize: 18),

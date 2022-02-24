@@ -6,12 +6,14 @@ class CustomText extends StatelessWidget {
   final double fontSize;
   final Alignment alignment;
   final FontWeight fontWeight;
-  CustomText(
-      {required this.text,
-      this.color = Colors.black,
-      required this.fontSize,
-      this.alignment = Alignment.topLeft,
-      this.fontWeight = FontWeight.normal});
+
+  CustomText({
+    required this.text,
+    this.color = Colors.black,
+    required this.fontSize,
+    this.alignment = Alignment.topLeft,
+    this.fontWeight = FontWeight.normal,
+  });
 
   @override
   Widget build(BuildContext context) {

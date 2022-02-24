@@ -31,7 +31,8 @@ dependencies:
   dio: ^4.0.1
   get_storage:
   cloud_firestore: ^3.1.8
- 
+  path:
+  sqflite:
   firebase_core:
   firebase_auth:
 

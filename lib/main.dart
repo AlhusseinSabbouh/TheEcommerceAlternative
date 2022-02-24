@@ -1,6 +1,7 @@
 
 
 import 'package:ecmmerce_app/view/auth/second_page.dart';
+import 'package:ecmmerce_app/view/sql_view.dart';
 import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
@@ -24,7 +25,7 @@ class MyApp extends StatelessWidget {
       initialBinding: Binding(),
       getPages: [GetPage(name: SecondPage().route, page: () => SecondPage())],
       debugShowCheckedModeBanner: false,
-      home: HomePageTest(),
+      home: SqlView(),
     );
   }
 }

@@ -1,4 +1,3 @@
-
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
@@ -59,7 +58,7 @@ class LogInView extends GetWidget<AuthViewModel> {
                 SizedBox(
                   height: 35,
                 ),
-                CustonTextFormField(
+                CustomTextFormField(
                     text: "Email",
                     hintText: "iamdavid@gmail.com",
                     onSaved: (value) {
@@ -72,7 +71,7 @@ class LogInView extends GetWidget<AuthViewModel> {
                 SizedBox(
                   height: 30,
                 ),
-                CustonTextFormField(
+                CustomTextFormField(
                     hintText: "*********",
                     text: "password",
                     onSaved: (value) {

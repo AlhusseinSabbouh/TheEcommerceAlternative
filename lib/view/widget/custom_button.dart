@@ -1,4 +1,3 @@
- 
 import 'package:flutter/material.dart';
 
 import '../../constant.dart';
@@ -20,7 +19,7 @@ class CustomButton extends StatelessWidget {
           style: ButtonStyle(
               backgroundColor: MaterialStateProperty.all(mainColor),
               padding:
-                  MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(20)),
+                  MaterialStateProperty.all<EdgeInsets>(EdgeInsets.all(10)),
               shape: MaterialStateProperty.all<RoundedRectangleBorder>(
                   RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(5.0),
